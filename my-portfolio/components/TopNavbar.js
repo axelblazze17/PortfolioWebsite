@@ -7,7 +7,7 @@ import {
     hamFastFadeContainer,
     mobileNavItemSideways,
     popUp,
-} from "../content/FramerMotionVariants";
+} from "../content/FramerMotionVariant";
 import { useDarkMode } from "../context/darkModeContext";
 import { navigationRoutes } from "../utils/utils";
 import { FiMoon, FiSun } from "react-icons/fi";
