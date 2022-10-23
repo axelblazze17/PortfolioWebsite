@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { FadeContainer, popUp } from "../content/FramerMotionVariants";
+import { FadeContainer, popUp } from "../content/FramerMotionVariant";
 import { navigationRoutes } from "../utils/utils";
 import { motion } from "framer-motion";
 import { SiSpotify } from "react-icons/si";
