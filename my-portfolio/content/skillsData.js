@@ -4,7 +4,7 @@ module.exports = [
         level: 90,
         pinned: true,
     },
-    {
+     {
         name: "C++",
         level: 90,
         pinned: true,
@@ -40,9 +40,9 @@ module.exports = [
         pinned: true,
     },
     {
-        name: "SASS",
+        name: "Sass",
         level: 80,
-        pinned: false,
+        pinned: true,
     },
     {
         name: "React.js",
@@ -57,12 +57,12 @@ module.exports = [
     {
         name: "Next.js",
         level: 60,
-        pinned: false,
+        pinned: true,
     },
     {
         name: "Tailwind CSS",
         level: 60,
-        pinned: false,
+        pinned: true,
     },
     {
         name: "Node.js",
@@ -97,18 +97,18 @@ module.exports = [
     {
         name: "Kaggle",
         level: 40,
-        pinned: false,
+        pinned: true,
     },
     {
         name: "Numpy",
         level: 40,
-        pinned: false,
+        pinned: true,
     },
     {
         name: "Pandas",
         level: 40,
-        pinned: false,
-    }
+        pinned: true,
+    } 
 
 
     /* .....Add more..... */

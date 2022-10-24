@@ -23,6 +23,7 @@ import {
     SiFigma,
     SiNumpy,
     SiPandas,
+    SiReact,
 } from "react-icons/si";
 import { FaReact } from "react-icons/fa";
 import { useDarkMode } from "@context/darkModeContext";
@@ -30,10 +31,9 @@ import * as WindowsAnimation from "@lib/windowsAnimation";
 
 export default function SkillSection({ skills }) {
     const { isDarkMode } = useDarkMode();
-
     return (
         <section className="mx-5">
-            <HomeHeading title="My Top Skills" />
+            <HomeHeading title="My Skills" />
 
             <motion.div
                 initial="hidden"
@@ -44,10 +44,10 @@ export default function SkillSection({ skills }) {
             >
                 {skills.map((skill, index) => {
                     const Icon = chooseIcon(skill.name.toLowerCase());
-                    console.log(skill);
+                    /* console.log(skill);
                     console.log(index);
-                    console.log(Icon);
-                    /* return (
+                    console.log(Icon); */
+                    return (
                         <motion.div
                             variants={popUp}
                             key={index}
@@ -65,7 +65,7 @@ export default function SkillSection({ skills }) {
                                 {skill.name}
                             </p>
                         </motion.div>
-                    ); */
+                    );
                 })}
             </motion.div>
         </section>
@@ -76,11 +76,17 @@ export default function SkillSection({ skills }) {
 function chooseIcon(title) {
     let Icon;
     switch (title) {
+        case "c":
+            Icon = SiC;
+            break;
+         case "c++":
+            Icon = SiCplusplus;
+            break;
+        case "java":
+            Icon = SiJava;
+            break;
         case "python":
             Icon = SiPython;
-            break;
-        case "javascript":
-            Icon = SiJavascript;
             break;
         case "html":
             Icon = SiHtml5;
@@ -88,60 +94,54 @@ function chooseIcon(title) {
         case "css":
             Icon = SiCss3;
             break;
-        case "next.js":
-            Icon = SiNextdotjs;
-            break;
-        case "react.js":
-            Icon = FaReact;
-            break;
-        case "tailwind css":
-            Icon = SiTailwindcss;
-            break;
-        case "git":
-            Icon = SiGit;
-            break;
-        case "material ui":
-            Icon = SiMaterialui;
-            break;
-        case "maggle":
-            Icon = SiKaggle;
-            break;
-        case "jquery":
-            Icon = SiJquery;
+        case "javascript":
+            Icon = SiJavascript;
             break;
         case "bootstrap":
             Icon = SiBootstrap;
             break;
-        case "mongodb":
-            Icon = SiMongodb;
+        case "sass":
+            Icon = SiSass;
             break;
-        case "java":
-            Icon = SiJava;
+        case "react.js":
+            Icon = FaReact;
             break;
-        case "c++":
-            Icon = SiCplusplus;
+        case "material ui":
+            Icon = SiMaterialui;
             break;
-        case "pandas":
-            Icon = SiPandas;
+        case "next.js":
+            Icon = SiNextdotjs;
             break;
-        case "numpy":
-            Icon = SiNumpy;
-            break;
-        case "figma":
-            Icon = SiFigma;
-            break;
-        case "express":
-            Icon = SiExpress;
+        case "tailwind css":
+            Icon = SiTailwindcss;
             break;
         case "node.js":
             Icon = SiNodedotjs;
             break;
-        case "sass":
-            Icon = SiSass;
+        case "express.js":
+            Icon = SiExpress;
             break;
-        case "c":
-            Icon = SiC;
+        case "mongo db":
+            Icon = SiMongodb;
             break;
+        case "jquery":
+            Icon = SiJquery;
+            break;
+        case "git":
+            Icon = SiGit;
+            break;
+        case "figma":
+            Icon = SiFigma;
+            break;
+        case "kaggle":
+            Icon = SiKaggle;
+            break;
+        case "numpy":
+            Icon = SiNumpy;
+            break;
+        case "pandas":
+            Icon = SiPandas;
+            break; 
         default:
             break;
     }
