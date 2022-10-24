@@ -1,0 +1,16 @@
+{
+    "$schema": "https://openapi.vercel.sh/vercel.json",
+    "cleanUrls": true,
+    "headers": [
+    ],
+    "redirects": [
+      {
+        "source": "/home",
+        "destination": "/"
+      },
+      {
+        "source": "/resume",
+        "destination": "/Resume.pdf"
+      }
+    ]
+  }
