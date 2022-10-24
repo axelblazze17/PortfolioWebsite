@@ -12,8 +12,11 @@ import { FiDownload } from "react-icons/fi";
 import Ripples from "react-ripples";
 import Metadata from "@components/MetaData";
 import pageMeta from "@content/meta";
+import SkillSection from "@components/SkillSection";
+import AnimatedHeading from "@components/AnimatedHeading";
+import { getPinnedSkills } from "@lib/dataFetch";
 
-export default function Home({ blogs, skills }) {
+export default function Home({ skills }) {
   return (
     <>
       <Metadata
@@ -85,7 +88,26 @@ export default function Home({ blogs, skills }) {
             </motion.div>
           </div>
         </motion.section>
+        <SkillSection skills={skills} />
       </div>
     </>
   );
+}
+
+export function HomeHeading({ title }) {
+  return (
+    <AnimatedHeading
+      className="w-full font-bold text-3xl text-left my-2 font-inter"
+      variants={headingFromLeft}
+    >
+      {title}
+    </AnimatedHeading>
+  );
+}
+
+export async function getStaticProps() {
+  const skills = getPinnedSkills();
+  return {
+    props: { skills },
+  };
 }
