@@ -1,4 +1,4 @@
-import passwordChecker from '/public/assets/password.png'
+/* import passwordChecker from '/public/assets/password.png'
 import Imagizer from '/public/assets/imagizer.png'
 import Event from '/public/assets/events.png'
 import reactPortfolio from '/public/assets/reactPortfolio.png'
@@ -6,13 +6,13 @@ import weatherApp from '/public/assets/weatherApp.png'
 import brieflyWeb from '/public/assets/brieflyWebsite.png'
 import calci from '/public/assets/calculator.png'
 import basicP from '/public/assets/basicPortfolio.png'
-import til from '/public/assets/tilWebsite.png'
+import til from '/public/assets/tilWebsite.png' */
 
 module.exports = [
     {
         id: 1,
         name: "Unlock - Password Strength Checker",
-        coverURL: passwordChecker,
+        coverURL: "https://i.imgur.com/vxCPytv.png",
         description:
             "Created a 100% safe Password Strength Checker that asks you for data related to Password but not the Password itself. I have used the Password Entropy Concept to Check the Strength of the Password.",
         githubURL: "https://github.com/Kush-munot/Password-Strength-Checker",
@@ -23,7 +23,7 @@ module.exports = [
     {
         id: 2,
         name: "Python Image Package",
-        coverURL: Imagizer,
+        coverURL: "https://i.imgur.com/PJY6aGM.png",
         description:
             "The Package is a onestop solution for Image Filter Processing ",
         githubURL: "https://github.com/Kush-munot/CG_Assignment.git",
@@ -45,7 +45,7 @@ module.exports = [
     {
         id: 4,
         name: "React.js Workshop Event Page",
-        coverURL: Event,
+        coverURL: "https://i.imgur.com/oOE4raG.png",
         description:
             "Codechef RCOEM Chapter held an Online Workshop where the Speaker, Mr.Rohit Nagbhidkar has taught the students React.js in 6 hrs. I had made the Events page for the Event.",
         githubURL: "https://github.com/RCOEM-CodeChef-Chapter/react-portfolio-workshop.git",
@@ -56,7 +56,7 @@ module.exports = [
     {
         id: 5,
         name: "React.js Portfolio",
-        coverURL: reactPortfolio,
+        coverURL: "https://i.imgur.com/eAHM9Wd.png",
         description:
             "In The React.js Workshop I learnt React.js and tried to make my very first Portfolio Website. It is fully responsive and made using React.js and Material UI",
         githubURL: "https://github.com/Kush-munot",
@@ -67,7 +67,7 @@ module.exports = [
     {
         id: 6,
         name: "Background Changing Weather App",
-        coverURL: weatherApp,
+        coverURL: "https://i.imgur.com/J4Iry0N.png",
         description:
             "The App uses Open Weather API and changes the background of the Window according to the weather. This gives uniqueness to the Project.",
         githubURL: "https://github.com/Kush-munot/WeatherApp",
@@ -78,7 +78,7 @@ module.exports = [
     {
         id: 7,
         name: "Briefly Website",
-        coverURL: brieflyWeb,
+        coverURL: "https://i.imgur.com/FY3GJqw.png",
         description:
             "During my Internship at Briefly - A SASS Market Place i had worked on React.js Material UI and Created a Vendor Application of 100+ screens in the Internship. The vendor page is in pre MVP and will be deployed soon.",
         githubURL: "https://github.com/Kush-munot",
@@ -89,7 +89,7 @@ module.exports = [
     {
         id: 8,
         name: "Calculator Project",
-        coverURL: calci,
+        coverURL: "https://i.imgur.com/cX18Olk.png",
         description:
             "During my learning phase in Webdevelopment I had made this theme changing Calculator project.",
         githubURL: "https://github.com/Kush-munot/Calculator",
@@ -100,7 +100,7 @@ module.exports = [
     {
         id: 9,
         name: "Basic Portfolio",
-        coverURL: basicP,
+        coverURL: "https://i.imgur.com/F609h7v.png",
         description:
             "In the learning phase i had made this beautiful and minimal Portfolio website deployed on Netlify. It is fully responsive and works on all display sizes.",
         githubURL: "https://github.com/Kush-munot/Task-01-Portfolio",
@@ -111,7 +111,7 @@ module.exports = [
     {
         id: 10,
         name: "The Imperial Lubricants Website",
-        coverURL: til,
+        coverURL: "https://i.imgur.com/FXvSnjA.png",
         description:
             "My First Intership at The Imperial Lubricants was as a Web Developer. I had created the website in HTML, CSS, Bootstrap and Javascript",
         githubURL: "https://github.com/The-Imperial-Lubricants/TIL_Website",
