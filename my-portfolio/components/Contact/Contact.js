@@ -4,7 +4,7 @@ import AnimatedHeading from "../FramerMotion/AnimatedHeading";
 import "react-toastify/dist/ReactToastify.css";
 
 import ContactForm from "./ContactForm"; // ======>> not created yet
-import AnimatedText from "../AnimatedText"; // ======>> not created yet
+import AnimatedText from "../FramerMotion/AnimatedText"; // ======>> not created yet
 
 export default function Contact() {
     return (
