@@ -3,7 +3,7 @@ import {
     opacityVariant,
 } from "../content/FramerMotionVariant"; // ===> not created yet
 import AnimatedHeading from "./FramerMotion/AnimatedHeading";
-import AnimatedText from "./AnimatedText";
+import AnimatedText from "./FramerMotion/AnimatedText";
 
 export default function PageTop({ pageTitle, headingClass, children }) {
     return (
