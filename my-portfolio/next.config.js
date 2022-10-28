@@ -1,10 +1,10 @@
-const withBundleAnalyzer = require("@next/bundle-analyzer")({
+/* const withBundleAnalyzer = require("@next/bundle-analyzer")({
     enabled: process.env.ANALYZE === "true",
 });
 
 const withPWA = require("next-pwa");
-
-module.exports = withBundleAnalyzer(
+ */
+/* module.exports = withBundleAnalyzer(
     withPWA({
         webpack: true,
         webpack: (config) => {
@@ -15,21 +15,7 @@ module.exports = withBundleAnalyzer(
         reactStrictMode: true,
         images: {
             domains: [
-                'res.cloudinary.com',
-                "imgur.com",
-                "i.imgur.com",
-                "cutt.ly",
-                "activity-graph.herokuapp.com",
-                "i.scdn.co", // images from spotify
-                "images.unsplash.com",
-            ],
-            remotePatterns: [
-                {
-                    protocol: 'https',
-                    hostname: 'i.imgur.com',
-                    port: '',
-                    pathname: '/assets/**'
-                }
+                "i.imgur.com"
             ],
         },
 
@@ -42,4 +28,12 @@ module.exports = withBundleAnalyzer(
             publicExcludes: ["!resume.pdf"], // don't cache pdf which I'll add later
         },
     })
-);
+); */
+
+
+module.exports ={
+    reactStrictMode: true,
+    images: {
+    domains: ["i.imgur.com"],
+    }
+}
